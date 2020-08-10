@@ -1,0 +1,18 @@
+@media (max-width: 670px) {
+    .menu__list {
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+    .menu__link{
+        display: block;
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-top {
+        padding: 20px;
+    }
+}

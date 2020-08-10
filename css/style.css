@@ -112,6 +112,7 @@ body {
     font-weight: 700;
     margin: auto;
     transition: all 1.5s;
+    transform-origin: left center;
 }
 
 
@@ -573,6 +574,5 @@ body {
 
 .rot-op {
     transform: rotate(-45deg);
-    transform-origin: left center;
     opacity: 0;
 }

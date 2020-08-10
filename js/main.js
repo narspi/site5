@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
     $('.photo__slider').slick({
         prevArrow: '<button class="slick-arrows slick-prev"><img src="images/arrow-left.svg"></button>',
         nextArrow: '<button class="slick-arrows slick-next"><img src="images/arrow-right.svg"></button>',

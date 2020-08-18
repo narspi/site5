@@ -93,6 +93,7 @@ body {
     background-position: center;
     padding: 40px;
     height: 100vh;
+    overflow: hidden;
 }
 
 .header-top__inner {
@@ -143,6 +144,47 @@ body {
     margin-left: 30px;
 }
 
+.burger-btn {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: transform 400ms;
+    margin: 10px auto;
+    overflow: hidden;
+    display: none;
+}
+
+
+.burger-btn__line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:#ECB84C;
+    stroke-width:5.5;
+    stroke-linecap:round;
+}
+
+.burger-btn__line.top {
+    stroke-dasharray: 40 139;
+}
+
+.burger-btn__line.bottom {
+    stroke-dasharray: 40 180;
+}
+
+.burger-btn.active .bottom {
+    stroke-dashoffset: -137;
+}
+
+.burger-btn.active .top {
+    stroke-dashoffset: -97;
+}
+
+.burger-btn.active {
+    transform: rotate(45deg);
+}
+
+
 .menu__list {
     display: flex;
     justify-content: center;
@@ -188,6 +230,7 @@ body {
 .reason__statistics {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
     transition: all .5s;
 }
